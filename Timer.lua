@@ -26,9 +26,9 @@ Methods: 				     ARGS	   RETURN		           DESCRIPTION
 	Timer:resume()   	  ->  nil  |    nil 	  |  Resumes the timer at the time it was paused.
 	Timer:set()   	 	  ->  num  |    nil 	  |  Sets the timer to the given number. Will do nothing if no number is passed through.
 	Timer:add()  		  ->  num  |    nil 	  |  Adds the given number to the timer.
-	Timer:sub()	  		  ->  num  |    nil 	  |  Subtracts the given number from the timer.
+	Timer:sub()	  	  ->  num  |    nil 	  |  Subtracts the given number from the timer.
 	Timer:pauseFor()	  ->  num  |    nil       |  Pauses the timer for the given amount of seconds.
-	Timer:toDateString()  ->  num  |    string    |  Returns the time string for the given number in seconds.
+	Timer:toDateString()      ->  num  |    string    |  Returns the time string for the given number in seconds.
 	Timer:getState()	  ->  nil  |    string    |  Returns the state of the timer. States: Running, Stopped, Paused
 	
 Properties:              VALUE			DESCRIPTION
@@ -43,7 +43,7 @@ Signals:				 TYPE	    RETURN			DESCRIPTION
 	Timer.Paused     :  Signal  -->  nil   |  Fires when the timer is paused.
 	Timer.Resumed    :  Signal  -->  nil   |  Fires when the timer is resumed from a pause state.
 	Timer.Completed  :  Signal  -->  nil   |  Fires when the timer completes its duration.
-	Timer.Tick	     :  Signal  -->  num   |  Fires every second the timer counts down. Returns the time remaining on the timer. 
+	Timer.Tick	 :  Signal  -->  num   |  Fires every second the timer counts down. Returns the time remaining on the timer. 
 	Timer.DidLoop    :  Signal  -->  num   |  Fires every time the timer does a loop. Returns the amount of times it has looped.
 
 Author:
